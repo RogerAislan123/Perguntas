@@ -25,7 +25,13 @@ app.use(bodyParser.json()); //permite a leitura de dados de formularios via json
 
 //ROTAS
 app.get("/", (req, res) => {
-    res.render("index");
+    Perguntas.findAll({raw: true, order:[
+        ['id', 'DESC']
+    ]}).then(perguntas =>{
+        res.render("index", {
+            perguntas: perguntas
+        });
+    });
 });
 
 app.get("/perguntar", (req, res) => {
