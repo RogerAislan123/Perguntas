@@ -1,0 +1,30 @@
+{
+  "name": "guiaperguntas",
+  "version": "1.0.0",
+  "description": "perguntas e respostas estilo Yahoo perguntas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RogerAislan123/perguntas.git"
+  },
+  "keywords": [
+    "Perguntas",
+    "respostas"
+  ],
+  "author": "Roger Aislan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RogerAislan123/perguntas/issues"
+  },
+  "homepage": "https://github.com/RogerAislan123/perguntas#readme",
+  "dependencies": {
+    "body-parser": "^1.19.2",
+    "ejs": "^3.1.6",
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.1"
+  }
+}
